@@ -1,0 +1,30 @@
+Here's a summary of the Angular app flow with a simple explanation to help you never forget:
+
+1. **angular.json**:
+   - This file defines project settings and tells Angular where the main files are. It points to important paths like `main.ts`, `index.html`, `styles.css`, etc.
+
+2. **main.ts**:
+   - This is the entry point. It prepares the browser environment and tells Angular to start the app by bootstrapping `AppModule`.
+
+3. **app.module.ts**:
+   - This is the heart of your app. It defines what components and modules are part of your app. It also specifies the main component to bootstrap (in this case, `AppComponent`).
+
+4. **app.component.ts**:
+   - This is the core of your app's UI. It defines the component's logic and ties it to an HTML file (through the selector `app-root`) and a stylesheet.
+
+5. **index.html**:
+   - The starting point of your app's web page. Angular inserts all the necessary scripts here to load the app. It uses `<app-root></app-root>` to load the main UI (from `app.component.html`).
+
+6. **app.component.html**:
+   - The actual HTML content that users see when the app runs. It’s the UI for your root component (`AppComponent`).
+
+**Simple explanation**:
+Think of your Angular app like a stage performance:
+1. **angular.json** is the stage director, organizing everything.
+2. **main.ts** opens the curtain and prepares the stage.
+3. **app.module.ts** is the cast list, introducing all the actors (components).
+4. **app.component.ts** is the lead actor’s script.
+5. **index.html** is the stage where the actors perform.
+6. **app.component.html** is the performance that the audience (user) sees.
+
+This structured flow ensures everything is in place before the user sees the final web page.
